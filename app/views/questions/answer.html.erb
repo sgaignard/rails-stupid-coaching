@@ -8,14 +8,8 @@
     <p>-You</p>
   </div>
   <div class="display answer">
-    <% if @ask == "I am going to work" %>
-      <p><strong>Great!</strong></p>
-    <% elsif @ask.last == "?" %>
-      <p><strong>Silly Question, get dressed and go to work!</strong></p>
-    <% else %>
-      <p><strong>I don't care, get dressed and go to work!</strong></p>
-    <% end %>
-      <p>-Your coach</p>
+    <p><strong><%= @answer %></strong></p>
+    <p>-Your coach</p>
   </div>
 
   <%= link_to "Ask another question", ask_path %>
